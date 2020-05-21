@@ -68,9 +68,12 @@
 
 		$(document).on('click', '#ftco-nav a[href^="#"]', function (event) {
 	    event.preventDefault();
-
+		
 	    var href = $.attr(this, 'href');
-
+		if ( $('#ftco-nav').is(':visible') ) {
+			// alert("here")
+			$('#ftco-nav').removeClass('show');
+		}
 	    $('html, body').animate({
 	        scrollTop: $($.attr(this, 'href')).offset().top
 	    }, 500, function() {
