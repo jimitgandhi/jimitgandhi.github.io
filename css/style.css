@@ -8990,7 +8990,7 @@ h1, h2, h3, h4, h5,
     transition: all 0.3s ease; }
     @media (max-width: 767.98px) {
       .project .overlay {
-        opacity: .7; } }
+        opacity: .9; } }
   .project .text {
     max-width: 95%;
     z-index: 1;
